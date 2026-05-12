@@ -9,7 +9,7 @@ $$\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}$$
 
 ![Status](https://img.shields.io/badge/Status-Unsolved-red)
 ![Prize](https://img.shields.io/badge/Prize-$1,000,000-gold)
-![Deadline](https://img.shields.io/badge/Deadline-May%2014%202026-blue)
+
 
 </div>
 
