@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{cite}
+\title{The Riemann Hypothesis: Distribution of Prime Numbers and the Zeros of the Zeta Function}
+\date{}
+\begin{document}
+\maketitle
+\paragraph{}
+The distribution of prime numbers is one of the oldest and deepest 
+problems in mathematics. Gauss and Legendre conjectured around 1800 
+that the number of primes up to $x$, denoted $\pi(x)$, behaves 
+asymptotically as $x / \ln x$ \cite{IwaniecKowalski2021}. This result, 
+known as the Prime Number Theorem, was proved in 1896 by Hadamard and 
+de la Vallée Poussin \cite{IwaniecKowalski2021}.
+In 1859, Riemann introduced the zeta function \cite{GourdonSebah}, 
+defined for $\Re(s) > 1$ by
+\[
+    \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prime}} \frac{1}{1-p^{-s}}
+\]
+and extended it to the whole complex plane by analytic continuation 
+\cite{GourdonSebah}.
+Riemann observed that $\zeta(s)$ vanishes at all negative even integers 
+(trivial zeros), and that all remaining non-trivial zeros lie in the 
+strip $0 < \Re(s) < 1$ \cite{GourdonSebah}. He conjectured that all 
+non-trivial zeros lie exactly on the critical line $\Re(s) = 1/2$ 
+\cite{GourdonSebah}. This conjecture, known as the Riemann Hypothesis 
+\cite{CarlsonJaffeWiles2023}, remains unproved after more than 160 years 
+and is listed as one of the seven Millennium Prize Problems 
+\cite{CarlsonJaffeWiles2023}.
+\paragraph{}
+Hardy proved in 1914 that infinitely many zeros lie on the critical line 
+\cite{IwaniecKowalski2021}. This was later strengthened by Hardy and 
+Littlewood (1921), who obtained quantitative estimates 
+\cite{IwaniecKowalski2021}. Selberg (1942) showed that a positive 
+proportion of zeros lie on the critical line \cite{IwaniecKowalski2021}, 
+and Conrey pushed this proportion \cite{Conrey1989} above two fifths, 
+which remains the best known result to this day. On the computational 
+side, Odlyzko and Schonhage \cite{OdlyzkoSchonhage} developed fast 
+algorithms based on the Riemann-Siegel formula \cite{GourdonSebah} to 
+evaluate $\zeta(s)$ efficiently at many points, enabling large-scale 
+numerical verification. These computations have confirmed that the first 
+$10^{22}$ zeros all lie on the critical line \cite{OdlyzkoSchonhage}, 
+providing strong empirical support for the hypothesis. Another major 
+direction connects the zeros of $\zeta(s)$ to quantum mechanics and 
+random matrix theory \cite{BerryKeating1999}: the statistical spacing 
+between consecutive zeros follows the same distribution as eigenvalues 
+of random unitary matrices \cite{BerryKeating1999}. This unexpected 
+connection, supported by the numerical work of Odlyzko, suggests that 
+the zeros might be eigenvalues of some unknown Hermitian operator 
+\cite{BerryKeating1999}. This is known as the Hilbert-Pólya conjecture 
+and has inspired a rich interdisciplinary research program at the 
+intersection of number theory and mathematical physics 
+\cite{BerryKeating1999}.
+\paragraph{}
+Despite these advances, the Riemann Hypothesis \cite{CarlsonJaffeWiles2023} 
+remains one of the most important open problems in mathematics. 
+Several directions are actively pursued. First, the proportion of zeros 
+proven to lie on the critical line is still far from 100\% \cite{Conrey1989}, 
+and pushing this bound further requires new analytic tools such as improved 
+mollifiers and mean-value estimates for $\zeta(s)$ \cite{IwaniecKowalski2021}. 
+Second, current zero-free regions are far from the critical line 
+\cite{IwaniecKowalski2021}, and stronger results would yield better 
+error terms in the Prime Number Theorem unconditionally. Third, the 
+Hilbert-Pólya conjecture remains open: no Hermitian operator 
+\cite{BerryKeating1999} whose eigenvalues are the imaginary parts 
+of the zeros has been constructed rigorously. A deeper understanding of 
+the analytic properties of $\zeta(s)$ \cite{GourdonSebah} 
+and more powerful tools from analytic number theory 
+\cite{IwaniecKowalski2021} are needed to make further progress 
+toward a proof.
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
